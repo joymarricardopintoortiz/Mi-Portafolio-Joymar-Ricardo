@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Factura</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<div class="invoice-container">
+
+    <div class="left">
+
+        <div class="header">
+            <img src="https://github.com/joymarricardopintoortiz/cubo-3d/blob/main/istockphoto-2150151119-612x612-removebg-preview.png?raw=true" alt="cubo_3d">
+            <div>
+                <h2>COMPANY NAME</h2>
+                <p>BRANDING TAGLINE SPACE HERE</p>
+            </div>
+        </div>
+
+        <div class="top-info">
+
+            <div class="notes">
+                <h4>Additional notes</h4>
+                <p>
+                Ut enim ad minim veniam,<br>
+                quis nostrud exercitation ullamco laboris nisi<br>
+                ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+
+            <div class="invoice-to">
+                <h4>Invoice to:</h4>
+                <p>JOHN SMITH</p>
+                <p>123 GREEN LAKE ST.</p>
+                <p>CITY STATE</p>
+                <p>COUNTRY</p>
+           </div>
+
+        </div>
+
+        <div class="table-section">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Product Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Item 1</td><td>$30.50</td></tr>
+                <tr><td>2</td><td>Item 2</td><td>$50.00</td></tr>
+                <tr><td>3</td><td>Item 3</td><td>$70.50</td></tr>
+                <tr><td>4</td><td>Item 4</td><td>$20.50</td></tr>
+            </tbody>
+        </table>
+        </div>
+
+        <div class="totals-labels">
+            <p>Subtotal</p>
+            <p>Taxes</p>
+            <p>Shipping</p>
+            <p>Discount</p>
+            <p class="total-text">TOTAL</p>
+        </div>
+
+        <div class="terms">
+            <h4>Terms and conditions</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur
+                adipiscing sed do eiusmod tempor incididunt
+                ut labore et magna aliqua.</p>
+        </div>
+
+        <div class="payment">
+            <h4>Payment Method</h4>
+            <label><input type="radio"> Cash/debit</label>
+            <label><input type="radio"> Cheque</label>
+            <label><input type="radio"> Credit Card</label>
+        </div>
+
+        <div class="card-details">
+
+            <div class="field-full">
+                <label>Cardholder's Name</label>
+                <div class="input-line"></div>
+            </div>
+
+            <div class="field-row">
+
+                <div class="field-item">
+                    <label>Card #</label>
+                    <div class="input-line"></div>
+                </div>
+
+                <div class="field-item">
+                    <label>Exp</label>
+                    <div class="input-line"></div>
+                </div>
+
+                <div class="field-item">
+                    <label>CV</label>
+                    <div class="input-line"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="right">
+
+        <h2 class="invoice-title">INVOICE</h2>
+
+        <div class="info">
+            <p><strong>INVOICE DATE</strong><br>03.09.2018</p>
+            <p><strong>DUE DATE</strong><br>03.12.2018</p>
+            <p><strong>INVOICE #</strong><br>14256</p>
+        </div>
+
+        <div class="summary">
+            
+            <div class="summary-header">
+                <span>Qty</span>
+                <span>Total</span>
+            </div>
+
+            <div class="row">
+                <span>3</span>
+                <span>$91.50</span>
+            </div>
+            <div class="row">
+                <span>1</span>
+                <span>$50.00</span>
+            </div>
+            <div class="row">
+                <span>5</span>
+                <span>$350.00</span>
+            </div>
+            <div class="row">
+                <span>2</span>
+                <span>$40.00</span>
+            </div>
+
+        </div>
+
+        <div class="totals-right">
+            <div><span>$531.50</span></div>
+            <div><span>$30.78</span></div>
+            <div><span>$20.00</span></div>
+            <div><span>$-10.00</span></div>
+
+            <div class="grand-total">
+                <span>$592.28</span>
+            </div>
+        </div>
+
+        <div class="signature">
+            <hr>
+            <p>Signature</p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
