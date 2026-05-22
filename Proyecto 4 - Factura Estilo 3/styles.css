@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.invoice-container {
+    display: flex;
+    max-width: 600px;
+    background: white;
+    overflow: hidden;
+}
+
+.left {
+    flex: 2;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #eaeaea;
+    padding: 12px;
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-top: -25px;
+}
+
+img {
+    font-size: 20px;
+    margin-left: 20px;
+    width: 30px;
+}
+
+.header h2 {
+    font-size: 25px;
+    margin-left: 35px;
+}
+
+.header p {
+    font-size: 11px;
+    color: gray;
+    margin-left: 35px;
+}
+
+.top-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.notes,
+.invoice-top {
+    flex: 1;
+}
+
+.notes p,
+.invoice-to p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.4;
+}
+
+.notes p {
+  line-height: 1.4;
+  max-height: calc(1.4em * 4);
+  overflow: hidden;
+}
+
+.invoice-to {
+    text-align: right;
+}
+
+.table-section {
+    background: #eaeaea;
+    padding: 15px;
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    font-size: 12px;
+    padding-bottom: 8px;
+}
+
+td {
+    font-size: 13px;
+    padding: 6px 0;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 50px;
+    text-align: center;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 60%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    text-align: right;
+    padding-right: 18px;
+}
+
+.totals-labels {
+    margin-top: 10px;
+    margin-left: auto;
+    width: 150px;
+}
+
+.totals-labels p {
+    display: flex;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 5px 0;
+    margin-left: 100px;
+}
+
+.total-text {
+    color: #949393;
+}
+
+.totals-labels p:nth-child(4) {
+    margin-bottom: 15px;
+}
+
+.terms,
+.payment {
+    margin-top: 18px;
+}
+
+.terms h4 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.terms p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.4;
+    max-width: 260px;
+}
+
+.payment {
+    margin-top: 18px;
+}
+
+.payment h4 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.payment label {
+    display: block;
+    font-size: 13px;
+}
+
+.payment label:nth-child(2),
+.payment label:nth-child(3),
+.payment label:nth-child(4) {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.payment input[type="radio"] {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #eaeaea;
+    margin-right: 6px;
+}
+
+.input-line {
+    height: 12px;
+    background: #eaeaea;
+    border-radius: 2px;
+    margin-top: 5px;
+}
+
+.field-row {
+    display: flex;
+    gap: 15px;
+    margin-top: -6px;
+}
+
+.field-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+}
+
+.field-full {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.field-full .input-line {
+    width: 150px;
+}
+
+.field-item:nth-child(1) .input-line {
+    width: 60px;
+}
+
+.field-item:nth-child(2) .input-line {
+    width: 40px;
+}
+
+.field-item:nth-child(3) .input-line {
+    width: 32px;
+}
+
+.right {
+    flex: 1;
+    background: #2f3a3f;
+    color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.invoice-title {
+    text-align: center;
+    letter-spacing: 2px;
+    background: #242c30;
+    padding: 20px 0;
+    margin: -25px -25px 20px -25px;
+}
+
+.info {
+    margin-top: -10px;
+    text-align: center;
+}
+
+.info p {
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.summary {
+    margin-top: 20px;
+    background: #242c30;
+    padding: 20px 0;
+    margin: -8px -25px 10px -25px;
+}
+
+.summary-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.summary-header span:first-child {
+    margin-left: 35px;
+    margin-top: -4.5px;
+}
+
+.summary-header span:last-child {
+    margin-right: 65px;
+    margin-top: -4.5px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 9px;
+}
+
+.row span:first-child {
+    margin-left: 40px;
+}
+
+.row span:last-child {
+    margin-right: 60px;
+}
+
+.totals-right {
+    margin-top: 15px;
+}
+
+.totals-right div {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 13px;
+    padding-right: 130px;
+    margin: 8px 0;
+}
+
+.grand-total {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.signature {
+  margin-top: auto;
+  text-align: center;
+}
+
+.signature hr {
+  border: none;
+  border-top: 2px solid white;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 613px) {
+
+    .invoice-container {
+        flex-direction: column;
+    }
+
+    .right {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .summary-header span:first-child {
+        margin-left: 55px;
+    }
+
+    .row span:first-child {
+        margin-left: 60px;
+    }
+
+    .summary-header span:last-child {
+        margin-right: 85px;
+    }
+
+    .row span:last-child {
+        margin-right: 75px;
+    }
+
+    .totals-right div {
+        padding-right: 5px;
+    }
+
+}
+
+@media (max-width: 398px) {
+
+  .invoice-container {
+    max-width: 100%;
+  }
+
+  .left,
+  .right {
+    padding: 20px;
+  }
+
+  .field-full {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .field-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .field-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input-line {
+    width: 100% !important;
+  }
+
+  .summary {
+    padding: 15px 0;
+    margin: -8px -20px 10px -20px;
+  }
+
+  .summary-header span:first-child {
+    margin-left: 45px;
+  }
+
+  .row span:first-child {
+    margin-left: 50px;
+  }
+
+  .summary-header span:last-child {
+    margin-right: 55px;
+  }
+
+  .row span:last-child {
+    margin-right: 50px;
+  }
+
+  .totals-right div {
+    padding-right: 10px;
+  }
+
+}
