@@ -1,0 +1,1150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #222;
+    padding-top: 90px;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    padding: 30px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;  
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin-left: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+nav a:hover {
+    color: #8ccf53;
+}
+
+.lado-derecho {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.circulo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+}
+
+.btn-registro {
+    border: none;
+    background: #ffffff;
+    padding: 10px 20px;
+    border-radius: 35px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    cursor: pointer;
+}
+
+.principal {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 8%;
+    gap: 50px;
+    position: relative;
+    overflow: visible;
+}
+
+.fondo-verde-grande {
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    background: #8ccf53;
+    top: -320px;
+    right: -180px;
+    z-index: 0;
+}
+
+.texto-principal,
+.imagen-principal {
+    position: relative;
+    z-index: 2;
+}
+
+.circulo-pequeño {
+    position: absolute;
+    border-radius: 50%;
+    background: #8ccf53;
+    z-index: 0;
+}
+
+.circulo-a {
+    width: 550px;
+    height: 480px;
+    top: -150px;
+    right: 390px;
+}
+
+.circulo-c {
+    width: 450px;
+    height: 300px;
+    top: 170px;
+    right: -80px;
+}
+
+.hoja {
+    position: absolute;
+    z-index: 1;
+}
+
+.hoja img {
+    width: 300px;
+    height: auto;
+}
+
+.hoja-1 {
+    top: 10px;
+    left: -5px;
+}
+
+.hoja-2 {
+    top: 980px;
+    right: -100px;
+}
+
+.hoja-3 {
+    top: 1300px;
+    left: -200px;
+}
+
+.texto-principal {
+    flex: 1;
+}
+
+.etiqueta {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    margin-bottom: 20px;
+}
+
+.texto-principal h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.texto-principal p {
+    color: #666;
+    line-height: 1.7;
+    max-width: 500px;
+}
+
+.botones {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn-verde {
+    border: none;
+    background: #8ccf53;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn-blanco {
+    border: 1px solid #ccc;
+    background: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.imagen-principal {
+    flex: 1;
+    text-align: center;
+}
+
+.imagen-principal img {
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 15px solid #8ccf53;
+}
+
+.mini-platillo {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    z-index: 5;
+}
+
+.mini-platillo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.platillo-1 {
+    top: 320px;
+    right: 730px;
+}
+
+.platillo-2 {
+    top: 400px;
+    right: 650px;
+}
+
+.platillo-3 {
+    top: 450px;
+    right: 510px;
+}
+
+.platillo-4 {
+    top: 400px;
+    right: 350px;
+}
+
+.platillo-5 {
+    top: 330px;
+    right: 250px;
+}
+
+.limon {
+    position: absolute;
+    z-index: 6;
+}
+
+.limon img {
+    width: 200px;
+    height: 200px;
+}
+
+.limon-1 {
+    top: 50px;
+    right: 680px;
+}
+
+.limon-2 {
+    top: 50px;
+    right: 260px;
+}
+
+.limon-2 img {
+    object-fit: cover;
+    width: 100px;
+}
+
+.productos {
+    width: 100%;
+    padding: 50px 8%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.tarjeta {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta img {
+    margin: 0 auto;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border:10px solid #8ccf53;
+    margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.pie-tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: auto;
+}
+
+.pie-tarjeta span {
+    background: #ffffff;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(0,0,0,.08);
+    color: #555;
+}
+
+.btn-comprar {
+    border: none;
+    background:  #8ccf53;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.beneficios {
+    padding: 80px 8%;
+}
+
+.beneficios h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.descripcion-beneficios {
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+    color: #666;
+    line-height: 1.7;
+}
+
+.contenedor-beneficios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 25px;
+}
+
+.contenedor-beneficios article {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,.08);
+}
+
+.contenedor-beneficios article img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.contenedor-beneficios h3 {
+    margin-bottom: 10px;
+}
+
+.contenedor-beneficios p {
+    color: #666;
+}
+
+@media (max-width: 1629px) {
+
+    .fondo-verde-grande {
+        width: 550px;
+        height: 580px;
+        top: -280px;
+        right: -170px;
+    }
+
+    .circulo-a {
+        width: 480px;
+        height: 420px;
+        top: -130px;
+        right: 330px;
+    }
+
+    .circulo-c {
+        width: 380px;
+        height: 260px;
+        top: 180px;
+        right: -70px;
+    }
+
+    .limon img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .limon-1 {
+        top: 60px;
+        right: 600px;
+    }
+
+    .limon-2 {
+        top: 60px;
+        right: 150px;
+    }
+
+    .limon-2 img {
+        width: 90px;
+    }
+
+    .mini-platillo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .mini-platillo img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .platillo-1 {
+        top: 300px;
+        right: 650px;
+    }
+
+    .platillo-2 {
+        top: 380px;
+        right: 580px;
+    }
+
+    .platillo-3 {
+        top: 430px;
+        right: 430px;
+    }
+
+    .platillo-4 {
+        top: 390px;
+        right: 280px;
+    }
+
+    .platillo-5 {
+        top: 320px;
+        right: 180px;
+    }
+}
+
+@media (max-width: 1469px) {
+
+    .fondo-verde-grande {
+        width: 520px;
+        height: 520px;
+        top: -250px;
+        right: -150px;
+    }
+
+    .circulo-a {
+        width: 430px;
+        height: 380px;
+        top: -120px;
+        right: 280px;
+    }
+
+    .circulo-c {
+        width: 330px;
+        height: 230px;
+        top: 160px;
+        right: -60px;
+    }
+
+    .limon img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .limon-1 {
+        top: 70px;
+        right: 550px;
+    }
+
+    .limon-2 img {
+        width: 80px;
+    }
+
+    .mini-platilo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .mini-platillo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .platillo-1 {
+        top: 300px;
+        right: 600px;
+    }
+
+    .platillo-2 {
+        top: 400px;
+        right: 520px;
+    }
+
+    .platillo-3 {
+        top: 450px;
+        right: 390px;
+    }
+
+    .platillo-4 {
+        top: 400px;
+        right: 250px;
+    }
+
+    .platillo-5 {
+        top: 300px;
+        right: 150px;
+    }
+}
+
+@media (max-width: 1357px) {
+
+    .fondo-verde-grande {
+        width: 470px;
+        height: 470px;
+        top: -220px;
+        right: -140px;
+    }
+
+    .circulo-a {
+        width: 400px;
+        height: 400px;
+        top: -110px;
+        right: 240px;
+    }
+
+    .circulo-c {
+        width: 290px;
+        height: 290px;
+        top: 150px;
+        right: -70px;
+    }
+
+    .limon img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .limon-1 {
+        top: 75px;
+        right: 520px;
+    }
+
+    .limon-2 {
+        top: 75px;
+        right: 80px;
+    }
+
+    .limon-2 img {
+        width: 70px;
+    }
+
+    .mini-platillo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .mini-platillo img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .platillo-1 {
+        top: 350px;
+        right: 550px;
+    }
+
+    .platillo-2 {
+        top: 420px;
+        right: 470px;
+    }
+
+    .platillo-3 {
+        top: 450px;
+        right: 360px;
+    }
+
+    .platillo-4 {
+        top: 420px;
+        right: 230px;
+    }
+
+    .platillo-5 {
+        top: 350px;
+        right: 130px;
+    }
+
+    .hoja img {
+        width: 240px;
+    }
+
+    .hoja-3 {
+        left: -170px;
+    }
+}
+
+@media (max-width: 1159px) {
+
+    .fondo-verde-grande {
+        width: 400px;
+        height: 400px;
+        top: -190px;
+        right:-120px;
+    }
+
+    .circulo-a {
+        width: 320px;
+        height: 290px;
+        top: -90px;
+        right: 190px;
+    }
+
+    .circulo-c {
+        width: 240px;
+        height: 250px;
+        right: -80px;
+    }
+
+    .limon img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .limon-1 {
+        top: 10px;
+        right: 390px;
+    }
+
+    .limon-2 {
+        top: 10px;
+        right: 170px;
+    }
+
+    .limon-2 img {
+        width: 60px;
+    }
+
+    .mini-platillo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .platillo-1 {
+        top: 300px;
+        right: 520px;
+    }
+
+    .platillo-2 {
+        top: 400px;
+        right: 430px;
+    }
+
+    .platillo-3 {
+        top: 450px;
+        right: 300px;
+    }
+
+    .platillo-4 {
+        top: 400px;
+        right: 150px;
+    }
+
+    .platillo-5 {
+        top: 300px;
+        right: 80px;
+    }
+
+    .hoja img {
+        width: 150px;
+    }
+
+    .hoja-3 {
+        left: -90px;
+    }
+}
+
+@media (max-width: 1081px) {
+
+    .fondo-verde-grande {
+        width: 360px;
+        height: 360px;
+        top: -160px;
+        right: -110px;
+    }
+
+    .circulo-a {
+        width: 280x;
+        height: 250px;
+        top: -80px;
+        right: 160px;
+    }
+
+    .circulo-c {
+        width: 280px;
+        height: 150px;
+        top: 150px;
+        right: -80px;
+    }
+
+    .limon-1 {
+        right: 380px;
+    }
+
+    .limon-2 {
+        right: 120px;
+    }
+
+    .imagen-principal img {
+        width: 320px;
+        height: 320px;
+        border: 12px solid #8ccf53;
+    }
+
+    .platillo-1 {
+        top: 300px;
+        right: 460px;
+    }
+
+    .platillo-2 {
+        top: 370px;
+        right: 390px;
+    }
+
+    .platillo-3 {
+        top: 410px;
+        right: 280px;
+    }
+
+    .platillo-4 {
+        top: 370px;
+    }
+
+    .platillo-5 {
+        top: 300px;
+    }
+}
+
+@media (max-width: 989px) {
+
+    header {
+        padding: 20px 5%;
+    }
+
+    nav ul {
+        margin-left: 20px;
+        gap: 15px;
+    }
+
+    .principal {
+        padding: 50px 5%;
+        gap: 30px;
+    }
+
+    .texto-principal h1 {
+        font-size: 2.3rem;
+    }
+
+    .texto-principal p {
+        font-size: .95rem;
+    }
+
+    .imagen-principal img {
+        width: 280px;
+        height: 280px;
+        border-width: 10px;
+    }
+
+    .circulo-c {
+        top: 130px;
+    }
+
+    .botones {
+        flex-wrap: wrap;
+    }
+
+    .btn-verde,
+    .btn-blanco {
+        padding: 10px 20px;
+    }
+
+    .productos {
+        padding: 50px 5%;
+    }
+
+    .beneficios {
+        padding: 60px 5%;
+    }
+
+    .platillo-1 {
+        top: 200px;
+        right: 420px;
+    }
+
+    .platillo-2 {
+        top: 280px;
+        right: 360px;
+    }
+
+    .platillo-3 {
+        top: 340px;
+        right: 250px;
+    }
+
+    .platillo-4 {
+        top: 300px;
+        right: 120px;
+    }
+
+    .platillo-5 {
+        top: 210px;
+        right: 50px;
+    }
+
+    .hoja-1 img {
+        width: 100px;
+    }
+
+    .hoja-1 {
+        top: -10px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .principal {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .texto-principal {
+        order: 1;
+    }
+
+    .imagen-principal {
+        order: 2;
+    }
+
+    .texto-principal p {
+        margin: auto;
+    }
+
+    .botones {
+        justify-content: center;
+    }
+
+    .platillo-1 {
+        top: 450px;
+        right: 600px;
+    }
+
+    .platillo-2 {
+        top: 530px;
+        right: 550px;
+    }
+
+    .platillo-3 {
+        top: 590px;
+        right: 420px;
+    }
+
+    .platillo-4 {
+        top: 530px;
+        right: 280px;
+    }
+
+    .platillo-5 {
+        top: 450px;
+        right: 190px;
+    }
+
+    .limon-1 {
+        top: 300px;
+        right: 550px;
+    }
+
+    .limon-2 {
+        top: 300px;
+        right: 250px;
+    }
+
+    .fondo-verde-grande,
+    .circulo-a, .circulo-c {
+        display: none;
+    }
+
+    .hoja img {
+        width: 220px;
+
+    }
+
+    .hoja-2 {
+        top: 1450px
+    }
+
+    .hoja-3 {
+        top: 2200px;
+    }
+
+    .beneficios {
+        padding: 60px 5%;
+    }
+
+    .beneficios h2 {
+        font-size: 2rem;
+    }
+
+    .descripcion-beneficios {
+        max-width: 100%;
+        font-size: .95rem;
+        margin-bottom: 35px;
+    }
+
+    .contenedor-beneficios {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contenedor-beneficios article {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .contenedor-beneficios article img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 862px) {
+
+    .imagen-principal img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .platillo-1 {
+        top: 450px;
+        right: 600px;
+    }
+
+    .platillo-2 {
+        top: 530px;
+        right: 540px;
+    }
+
+    .platillo-3 {
+        top: 590px;
+        right: 410px;
+    }
+
+    .platillo-4 {
+        top: 530px;
+        right: 250px;
+    }
+
+    .platillo-5 {
+        top: 450px;
+        right: 180px;
+    }
+
+    .limon-1 {
+        top: 300px;
+        right: 550px;
+    }
+
+    .limon-2 {
+        top: 300px;
+        right: 200px;
+    }
+
+    .limon img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .limon-2 img {
+        width: 70px;
+    }
+
+    .hoja img {
+        width: 180px;
+    }
+}
+
+@media (max-width: 786px) {
+
+    .principal {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .imagen-principal img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .platillo-1,
+    .platillo-5 {
+        display: none;
+    }
+
+    .platillo-2 {
+        top: 500px;
+        right: 510px;
+    }
+
+    .platillo-3 {
+        top: 570px;
+        right: 360px;
+    }
+
+    .platillo-4 {
+        top: 500px;
+        right: 220px;
+    }
+
+    .limon-1 {
+        right: 500px;
+    }
+
+    .limon-2 {
+        right: 180px;
+    }
+}
+
+@media (max-width: 714px) {
+
+    .imagen-principal img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .platillo-2,
+    .platillo-3,
+    .platillo-4 {
+        display: none;
+    }
+
+    .limon-1 {
+        top: 350px;
+        right: 450px;
+    }
+
+    .limon-2 {
+        top: 350px;
+        right: 150px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .imagen-principal img {
+        width: 210px;
+        height: 210px;
+    }
+
+    .hoja-1,
+    .limon {
+        display: none;
+    }
+}
+
+@media (max-width: 547px) {
+
+    header {
+        justify-content: center;
+        padding: 20px 5%;
+    }
+
+    nav ul {
+        margin-left: 0;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .texto-principal h1 {
+        font-size: 1.9rem;
+    }
+
+    .texto-principal p {
+        font-size: 0.9rem;
+    }
+
+    .productos {
+        grid-template-columns: 1fr;
+    }
+
+    .hoja, .limon {
+        display: none;
+    }
+}
+
+@media (max-width: 445px) {
+
+    .principal {
+        padding-top: 120px;
+    }
+}
